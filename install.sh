@@ -4,7 +4,7 @@
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 timedatectl set-timezone Asia/Shanghai
 rm /etc/yum.repos.d/CentOS-Base.repo
-cp /vagrant/yum/*.* /etc/yum.repos.d/
+cp /vagrant/*.repo /etc/yum.repos.d/
 mv /etc/yum.repos.d/CentOS7-Base-163.repo /etc/yum.repos.d/CentOS-Base.repo
 
 yum install -y curl wget jq envsubst awk bash getent grep gunzip less openssl sed tar base64 basename cat dirname head id mkdir numfmt sort tee
